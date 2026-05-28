@@ -1,0 +1,40 @@
+<!--
+  TEMPLATE: copy this file to src/pages/<your-page-slug>.html (or a nested
+  directory like src/pages/connectivity/<slug>.html), then edit. Build with
+  `node build.mjs` (or `npm run build`) to produce dist/<...>.html.
+
+  Optional frontmatter at the very top sets per-page meta. Remove keys you do not need.
+-->
+<!--meta
+  title:       Your page title - M2M One NZ
+  description: One-sentence summary used by search engines and social cards.
+  canonical:   https://m2mone.co.nz/your-page-slug
+-->
+
+{{> skip-link }}
+{{> header }}
+{{> mobile-drawer }}
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span class="crumb-sep">&rsaquo;</span>
+        <span>Your page</span>
+      </nav>
+      <span class="eyebrow">Section eyebrow</span>
+      <h1 class="h-1">Page heading</h1>
+      <p class="lead">Write your lead paragraph here. The base layout already loads styles, fonts, and scripts.</p>
+    </div>
+  </section>
+
+  <!-- Add page-section blocks. Reuse any existing component: -->
+  <!-- {{> plan-finder }} -->
+
+  {{> cta-page-final }}
+
+</main>
+
+{{> back-to-top }}
+{{> footer }}

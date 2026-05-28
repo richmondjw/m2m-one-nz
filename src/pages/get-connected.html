@@ -1,0 +1,238 @@
+<!--meta
+  title:       Get Connected | M2M One NZ
+  description: Create your M2M One NZ account. Fill in the sign-up form, order SIMs and services, and connect to Spark's nationwide network.
+  canonical:   https://m2mone.co.nz/get-connected.html
+-->
+
+{{> skip-link }}
+{{> header }}
+{{> mobile-drawer }}
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="orb teal drift" style="width: 380px; height: 380px; top: -120px; right: -80px; opacity: 0.55;"></div>
+    <div class="orb mint drift-slow" style="width: 220px; height: 220px; top: 40%; left: -60px;"></div>
+    <div class="container">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span class="crumb-sep">&rsaquo;</span> <span>Get Connected</span></nav>
+      <span class="eyebrow">Get Connected</span>
+      <h1 class="h-1">Get <em class="accent">connected</em> in 3 simple steps</h1>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <ol class="signup-steps reveal-children">
+        <li class="signup-step">
+          <span class="signup-step-num">01</span>
+          <h3>Fill in the sign-up form</h3>
+          <p>Provide your business details, billing and shipping addresses, and product requirements.</p>
+        </li>
+        <li class="signup-step">
+          <span class="signup-step-num">02</span>
+          <h3>Order SIMs &amp; Services</h3>
+          <p>Once your account is approved, order the right plan and form factor for your devices.</p>
+        </li>
+        <li class="signup-step">
+          <span class="signup-step-num">03</span>
+          <h3>Connect to M2M One</h3>
+          <p>Activate, monitor, and manage your fleet from the Control Centre.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section page-section--with-form">
+    <div class="container">
+      <div class="form-card form-card--wide reveal">
+        <h2 class="h-1 form-card-heading">Create Your M2M One Account</h2>
+        <p class="form-required-note"><span class="form-required-mark">*</span> indicates required fields</p>
+        <form class="iot-form" action="#" method="post" novalidate>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Your Details</legend>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="gc-first-name">First Name <span class="form-required-mark">*</span></label>
+                <input type="text" id="gc-first-name" name="first_name" required autocomplete="given-name">
+              </div>
+              <div class="form-field">
+                <label for="gc-last-name">Last Name <span class="form-required-mark">*</span></label>
+                <input type="text" id="gc-last-name" name="last_name" required autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="gc-business">Business Name <span class="form-required-mark">*</span></label>
+              <input type="text" id="gc-business" name="business" required autocomplete="organization">
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="gc-email">Email <span class="form-required-mark">*</span></label>
+                <input type="email" id="gc-email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="gc-mobile">Mobile <span class="form-required-mark">*</span></label>
+                <input type="tel" id="gc-mobile" name="mobile" required autocomplete="tel">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Billing Address <span class="form-required-mark">*</span></legend>
+            <div class="form-field">
+              <label for="gc-billing-address">Address</label>
+              <input type="text" id="gc-billing-address" name="billing_address" autocomplete="billing street-address">
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="gc-billing-city">City</label>
+                <input type="text" id="gc-billing-city" name="billing_city" autocomplete="billing address-level2">
+              </div>
+              <div class="form-field">
+                <label for="gc-billing-post">Post Code</label>
+                <input type="text" id="gc-billing-post" name="billing_post" autocomplete="billing postal-code">
+              </div>
+              <div class="form-field">
+                <label for="gc-billing-country">Country</label>
+                <select id="gc-billing-country" name="billing_country" autocomplete="billing country">
+                  <option value="NZ" selected>New Zealand</option>
+                  <option value="AU">Australia</option>
+                  <option value="">&mdash; Other &mdash;</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Shipping Address</legend>
+            <div class="form-checkbox">
+              <input type="checkbox" id="gc-shipping-same" name="shipping_same" checked>
+              <label for="gc-shipping-same">Same as billing address</label>
+            </div>
+            <div class="form-field">
+              <label for="gc-shipping-address">Address</label>
+              <input type="text" id="gc-shipping-address" name="shipping_address" autocomplete="shipping street-address">
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="gc-shipping-city">City</label>
+                <input type="text" id="gc-shipping-city" name="shipping_city" autocomplete="shipping address-level2">
+              </div>
+              <div class="form-field">
+                <label for="gc-shipping-post">Post Code</label>
+                <input type="text" id="gc-shipping-post" name="shipping_post" autocomplete="shipping postal-code">
+              </div>
+              <div class="form-field">
+                <label for="gc-shipping-country">Country</label>
+                <select id="gc-shipping-country" name="shipping_country" autocomplete="shipping country">
+                  <option value="NZ" selected>New Zealand</option>
+                  <option value="AU">Australia</option>
+                  <option value="">&mdash; Other &mdash;</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">About Your Deployment <span class="form-optional-label">(optional, helps speed up onboarding)</span></legend>
+            <div class="form-field">
+              <label for="gc-referral">Referral Name / Code</label>
+              <input type="text" id="gc-referral" name="referral">
+            </div>
+            <div class="form-field">
+              <label for="gc-industry">M2M / IoT Industry Segment</label>
+              <select id="gc-industry" name="industry">
+                <option value="">&mdash; Select &mdash;</option>
+                <option>Agriculture</option>
+                <option>Alarms / Security</option>
+                <option>Asset Tracking / Monitoring</option>
+                <option>Automotive</option>
+                <option>Aviation</option>
+                <option>Cameras / CCTV</option>
+                <option>Developer</option>
+                <option>Digital Signs / Advertising</option>
+                <option>Dispatch / Field Service</option>
+                <option>Drones</option>
+                <option>EFTPOS / Payment Systems</option>
+                <option>Emergency Services</option>
+                <option>Environmental</option>
+                <option>EV Charging / Vehicles / Bikes / Scooters</option>
+                <option>Fleet / Transport / Logistics</option>
+                <option>Gateways / Routers</option>
+                <option>Government / Military</option>
+                <option>Healthcare</option>
+                <option>Industrial Automation / Control Systems</option>
+                <option>IoT Platform</option>
+                <option>Manufacturing</option>
+                <option>Marine / Boats</option>
+                <option>Mining</option>
+                <option>Parking Systems</option>
+                <option>Remote Control / Remote Access</option>
+                <option>Research &amp; Development</option>
+                <option>Service Provider</option>
+                <option>Smart Cities</option>
+                <option>Smart Metering / Utilities</option>
+                <option>Systems Integrator</option>
+                <option>Traffic / Variable Message Signs</option>
+                <option>Vending / Retail</option>
+                <option>Wearables</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="gc-industry-other">If &lsquo;Other&rsquo; Industry?</label>
+              <input type="text" id="gc-industry-other" name="industry_other">
+            </div>
+            <fieldset class="form-checkboxes">
+              <legend>Product Requirements</legend>
+              <div class="form-checkbox-grid">
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-sim" name="pr_sim"><label for="gc-pr-sim">SIM Cards</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-data" name="pr_data"><label for="gc-pr-data">Data Plans</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-net" name="pr_net"><label for="gc-pr-net">Networking</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-vpn" name="pr_vpn"><label for="gc-pr-vpn">VPN</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-voice" name="pr_voice"><label for="gc-pr-voice">Voice</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-sms" name="pr_sms"><label for="gc-pr-sms">SMS</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-roam" name="pr_roam"><label for="gc-pr-roam">International Roaming</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-lora" name="pr_lora"><label for="gc-pr-lora">LoRaWAN</label></div>
+                <div class="form-checkbox"><input type="checkbox" id="gc-pr-api" name="pr_api"><label for="gc-pr-api">REST API</label></div>
+              </div>
+            </fieldset>
+            <div class="form-field">
+              <label for="gc-description">Description of Requirements</label>
+              <textarea id="gc-description" name="description" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Terms and Conditions</legend>
+            <div class="form-checkbox">
+              <input type="checkbox" id="gc-terms" name="terms" required>
+              <label for="gc-terms">I agree to the <a href="/legal/standard-form-of-agreement.html">M2M One Terms &amp; Conditions</a> <span class="form-required-mark">*</span></label>
+            </div>
+            <p class="form-fine-print">By completing this account form you must agree to M2M One NZ&rsquo;s Standard Form of Agreement which can be read at <a href="/legal/standard-form-of-agreement.html">/legal/standard-form-of-agreement</a>.</p>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Submit Application
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg>
+          </button>
+          <p class="form-disabled-note">Static demo &mdash; form submissions inactive. Connect your form provider to enable.</p>
+        </form>
+      </div>
+
+      <aside class="form-aside form-aside--full reveal" style="margin-top: 3rem;">
+        <div class="form-aside-block">
+          <span class="eyebrow">Creating an account</span>
+          <p>Filling in the form on this page gives us the information we need to create your M2M One account. Once you have completed all the required fields, your information will be sent to our accounts team for review and approval.</p>
+          <p>Once approved, we&rsquo;ll send you an email with your account information and instructions for ordering and connecting services with M2M One.</p>
+          <p>If you have any questions or want to discuss our service in more detail, feel free to <a href="/contact.html">contact us</a> at any time.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {{> cta-page-final }}
+
+</main>
+
+{{> back-to-top }}
+{{> footer }}

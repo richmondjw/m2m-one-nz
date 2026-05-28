@@ -1,0 +1,63 @@
+        <!--meta
+          title:       Backup &amp; Failover IoT Solutions | M2M One NZ
+          description: Cellular backup and failover for IoT sites that can't go down. Automatic switchover from primary WAN to cellular, with sub-second handover.
+          canonical:   https://m2mone.co.nz/solutions/failover.html
+        -->
+
+        {{> skip-link }}
+        {{> header }}
+        {{> mobile-drawer }}
+
+        <main id="main">
+
+          <section class="page-hero">
+    <div class="orb teal drift" style="width: 380px; height: 380px; top: -120px; right: -80px; opacity: 0.55;"></div>
+    <div class="orb mint drift-slow" style="width: 220px; height: 220px; top: 40%; left: -60px;"></div>
+    <div class="container">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span class="crumb-sep">&rsaquo;</span> <a href="/solutions/">Solutions</a> <span class="crumb-sep">&rsaquo;</span> <span>Backup &amp; Failover</span></nav>
+<span class="eyebrow">Backup &amp; Failover</span>
+      <h1 class="h-1">For sites that can't go down.</h1>
+      <p class="lead">When the primary WAN fails (fibre cut, modem dies, ISP outage), cellular kicks in. M2M One's industrial SIMs paired with multi-WAN routers from Peplink, Sierra Wireless, or Robustel give you sub-second failover, with policy controls for what traffic switches and what waits.</p>
+    </div>
+  </section>
+<section class="page-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Architecture</span>
+      <h2 class="h-1">How failover is built.</h2>
+      <p>Failover isn't a single product, it's an architecture. The right pattern depends on the criticality of the site and the cost of downtime.</p>
+    </div>
+    <ul class="two-col-list reveal">
+              <li><strong>Hot standby</strong>: cellular link is always active; traffic flips on failure of primary.</li>
+      <li><strong>Cold standby</strong>: cellular link comes up only when primary fails (slower, cheaper).</li>
+      <li><strong>Active/active</strong>: both links carry traffic; failover is implicit (no flip).</li>
+      <li><strong>Policy-based routing</strong>: critical apps go cellular even when primary is up.</li>
+      <li><strong>Multi-cellular</strong>: two cellular carriers (Spark + roaming) for full diversity.</li>
+      <li><strong>Satellite as last resort</strong>: for the most critical sites, satellite behind cellular.</li>
+    </ul>
+  </div>
+</section>
+<section class="page-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Use Cases</span>
+      <h2 class="h-1">Where failover matters most.</h2>
+    </div>
+    <div class="feature-grid reveal-children">
+            <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><h3>EFTPOS &amp; retail</h3><p>When the store can't take cards, sales stop. Failover keeps transactions flowing.</p></div>
+    <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg><h3>Healthcare clinics</h3><p>Patient care depends on connected systems. Cellular failover bridges outages.</p></div>
+    <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/><path d="M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg><h3>Industrial sites</h3><p>Plant connectivity, SCADA, and remote monitoring with auto-failover.</p></div>
+    <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/><path d="M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg><h3>Banking &amp; ATMs</h3><p>Cellular failover behind fibre for ATM uptime.</p></div>
+    <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/><path d="M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg><h3>Critical infrastructure</h3><p>Water, power, transport sites with cellular + satellite redundancy.</p></div>
+    <div class="feature-tile tilt-card reveal"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/><path d="M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg><h3>Branch offices</h3><p>Cellular for branches where fibre is the only line in.</p></div>
+    </div>
+  </div>
+</section>
+
+
+          {{> cta-page-final }}
+
+        </main>
+
+        {{> back-to-top }}
+        {{> footer }}

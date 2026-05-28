@@ -1,0 +1,33 @@
+/* ============================================================
+   TOKENS
+   Design tokens - the single source of truth for brand decisions.
+   Update these to rebrand the site. They cascade to every component.
+
+   Categories:
+ - Colour palette (teal, dark teal, mint, neutrals, semantic)
+ - Typography (font stacks, scale, weights)
+ - Spacing scale (rems)
+ - Motion (easing curves, durations)
+ - Borders, radii, shadows
+ - Breakpoints (used in @media queries throughout)
+   ============================================================ */
+
+:root {
+ --teal-500: #00AFAA; --teal-600: #009B96; --teal-700: #00807C; --teal-300: #4FCDC9;
+ --dark-teal-900: #003640; --dark-teal-800: #00485A; --dark-teal-700: #005566;
+ --gray-600: #666666; --blue-700: #00677A;
+ --mint-100: #BBEBDD; --mint-200: #92DCC6; --mint-50: #EDF7F3;
+ --black: #050D10; --near-black: #0A1518;
+ --white: #FFFFFF; --off-white: #F7F8F9;
+ --border-light: #E5E7EB; --border-mid: #CDD3D6;
+ --border-dark: rgba(255, 255, 255, 0.08);
+ --border-dark-2: rgba(255, 255, 255, 0.14);
+ --text-primary: #0A1518; --text-secondary: #4A5C63; --text-muted: #8A9499;
+ --text-on-dark: #FFFFFF; --text-on-dark-mute: rgba(255, 255, 255, 0.86);
+ --text-on-dark-soft: rgba(255, 255, 255, 0.72);
+ --font-sans: 'Titillium Web', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+ --font-mono: 'JetBrains Mono', ui-monospace, "SF Mono", Menlo, monospace;
+ --max-width: 1280px; --content-padding: 2rem;
+ --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px;
+ --t-fast: 160ms ease;
+}

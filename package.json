@@ -1,0 +1,15 @@
+{
+  "name": "m2m-site",
+  "version": "0.29.0",
+  "description": "M2M One NZ - industrial IoT homepage. Static site, zero runtime dependencies.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node server.mjs",
+    "serve": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

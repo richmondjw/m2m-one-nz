@@ -1,0 +1,49 @@
+<!--
+  Base layout. Wraps every page.
+ - {{ title }}, {{ description }}, {{ canonical }} are filled per-page from frontmatter
+    or fall back to defaults defined in src/data/site.json.
+ - {{ content }} is the page-specific body content (from src/pages/*.html).
+
+  To add a new page-level meta value (e.g. og:image), add it here as
+  {{ og_image }} and supply it from frontmatter or site.json.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#003640" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="canonical" href="{{ canonical }}" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ canonical }}" />
+  <meta property="og:site_name" content="M2M One" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+
+  <!-- Fonts: Titillium Web (sans) + JetBrains Mono (technical labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+{{ content }}
+
+  <!-- Site scripts (deferred - runs after parse) -->
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

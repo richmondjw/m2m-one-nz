@@ -1,0 +1,1678 @@
+<!--
+  Homepage. Page-specific content only - layout (head, header, footer, scripts)
+  is provided by src/layouts/base.html.
+
+  Component includes use {{> name }} syntax. Resolved by build.mjs.
+  See src/components/ for available partials.
+-->
+{{> skip-link }}
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- HEADER -->
+{{> header }}
+
+<!-- MOBILE DRAWER -->
+{{> mobile-drawer }}
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="orb teal drift" style="width: 400px; height: 400px; top: -100px; right: -50px;"></div>
+  <div class="orb blue drift-slow" style="width: 360px; height: 360px; bottom: -80px; left: -80px;"></div>
+  <div class="orb mint" style="width: 240px; height: 240px; top: 40%; left: 50%; opacity: 0.3;"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Industrial IoT · New Zealand</span>
+      <h1 class="h-display">
+        Industrial connectivity.<br>From cities to the most <span class="accent">remote edges.</span>
+      </h1>
+      <p class="lead">
+        IoT SIM cards and services for NZ businesses. Connect EFTPOS, GPS trackers,
+        security cameras, and more on Spark's nationwide network. Local support, no lock-in.
+      </p>
+      <div class="hero-ctas">
+        <a href="/contact.html" class="btn btn-primary">
+          Chat with an IoT Expert
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg>
+        </a>
+        <a href="/free-trial.html" class="btn btn-secondary">Try M2M One for free</a>
+      </div>
+      <p class="hero-trial-note">1 month free trial &middot; up to 3 SIMs &middot; no minimum commitments</p>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hl7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D4F2E5"/><stop offset="60%" stop-color="#BBEBDD"/><stop offset="100%" stop-color="#92DCC6"/></linearGradient>
+          <linearGradient id="hl6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A6E2C8"/><stop offset="60%" stop-color="#7BD1B8"/><stop offset="100%" stop-color="#4FCDC9"/></linearGradient>
+          <linearGradient id="hl5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5DD3CD"/><stop offset="60%" stop-color="#22BFBA"/><stop offset="100%" stop-color="#00AFAA"/></linearGradient>
+          <linearGradient id="hl4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22BCB6"/><stop offset="60%" stop-color="#00A09B"/><stop offset="100%" stop-color="#00807C"/></linearGradient>
+          <linearGradient id="hl3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#008A98"/><stop offset="60%" stop-color="#00677A"/><stop offset="100%" stop-color="#00485A"/></linearGradient>
+          <linearGradient id="hl2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00606E"/><stop offset="60%" stop-color="#004858"/><stop offset="100%" stop-color="#003640"/></linearGradient>
+          <linearGradient id="hl1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#004250"/><stop offset="60%" stop-color="#002A35"/><stop offset="100%" stop-color="#001620"/></linearGradient>
+
+          <!-- Side face gradients: darker left (away from light), lighter right -->
+          <linearGradient id="sideL7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7BCFB5"/><stop offset="100%" stop-color="#5EB897"/></linearGradient>
+          <linearGradient id="sideR7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5EC0A4"/><stop offset="100%" stop-color="#42A186"/></linearGradient>
+          <linearGradient id="sideL6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3FB7B0"/><stop offset="100%" stop-color="#2A9D96"/></linearGradient>
+          <linearGradient id="sideR6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2EA295"/><stop offset="100%" stop-color="#1A887B"/></linearGradient>
+          <linearGradient id="sideL5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#009A95"/><stop offset="100%" stop-color="#007F7A"/></linearGradient>
+          <linearGradient id="sideR5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#008580"/><stop offset="100%" stop-color="#006A65"/></linearGradient>
+          <linearGradient id="sideL4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#006D69"/><stop offset="100%" stop-color="#005450"/></linearGradient>
+          <linearGradient id="sideR4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#005955"/><stop offset="100%" stop-color="#003F3C"/></linearGradient>
+          <linearGradient id="sideL3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#003E4D"/><stop offset="100%" stop-color="#002834"/></linearGradient>
+          <linearGradient id="sideR3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#002F3B"/><stop offset="100%" stop-color="#001D27"/></linearGradient>
+          <linearGradient id="sideL2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#002830"/><stop offset="100%" stop-color="#001821"/></linearGradient>
+          <linearGradient id="sideR2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#001D24"/><stop offset="100%" stop-color="#000F15"/></linearGradient>
+          <linearGradient id="sideL1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#001620"/><stop offset="100%" stop-color="#000810"/></linearGradient>
+          <linearGradient id="sideR1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#000F18"/><stop offset="100%" stop-color="#000408"/></linearGradient>
+
+          <radialGradient id="hgRing" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0%" stop-color="rgba(0,175,170,0.22)"/>
+            <stop offset="70%" stop-color="rgba(0,175,170,0.05)"/>
+            <stop offset="100%" stop-color="rgba(0,175,170,0)"/>
+          </radialGradient>
+
+          <!-- Per-layer drop shadow, slightly more pronounced -->
+          <filter id="lShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+          </filter>
+          <!-- Ambient glow filter for the active layer -->
+          <filter id="layerGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Concentric coverage rings (atmosphere) -->
+        <g opacity="0.6">
+          <circle cx="270" cy="270" r="260" fill="url(#hgRing)"/>
+          <circle cx="270" cy="270" r="220" fill="none" stroke="rgba(0,175,170,0.06)" stroke-width="1" stroke-dasharray="2 6"/>
+          <circle cx="270" cy="270" r="180" fill="none" stroke="rgba(0,175,170,0.05)" stroke-width="1" stroke-dasharray="2 6"/>
+        </g>
+
+        <!-- Background atmosphere dots (depth) -->
+        <g fill="rgba(255,255,255,0.18)">
+          <circle cx="40" cy="80" r="0.8"/>
+          <circle cx="80" cy="40" r="0.6"/>
+          <circle cx="490" cy="60" r="0.8"/>
+          <circle cx="510" cy="120" r="0.6"/>
+          <circle cx="30" cy="180" r="0.6"/>
+          <circle cx="500" cy="240" r="0.8"/>
+          <circle cx="20" cy="320" r="0.6"/>
+          <circle cx="510" cy="380" r="0.8"/>
+          <circle cx="50" cy="440" r="0.6"/>
+          <circle cx="480" cy="490" r="0.8"/>
+          <circle cx="100" cy="500" r="0.6"/>
+          <circle cx="170" cy="20" r="0.6"/>
+          <circle cx="380" cy="20" r="0.8"/>
+          <circle cx="430" cy="510" r="0.6"/>
+        </g>
+
+        <!-- The stack: 7 layers, each with refined lighting (top highlight, dual side gradient, top-edge spec highlight) -->
+        <g filter="url(#lShadow)">
+          <!-- LAYER 7 (top, lightest) -->
+          <g transform="translate(120 110)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl7)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL7)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR7)"/>
+            <!-- Top-edge highlight (light from upper-left) -->
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.45)" stroke-width="0.8" fill="none"/>
+            <!-- Subtle inner highlight band on top face -->
+            <path d="M8 0 L150 -46 L292 0" stroke="rgba(255,255,255,0.12)" stroke-width="0.5" fill="none"/>
+            <!-- Edge crease shadow on bottom apex -->
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.25)" stroke-width="0.5" fill="none" opacity="0.6"/>
+          </g>
+          <!-- LAYER 6 -->
+          <g transform="translate(120 165)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl6)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL6)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR6)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.4)" stroke-width="0.8" fill="none"/>
+            <path d="M8 0 L150 -46 L292 0" stroke="rgba(255,255,255,0.10)" stroke-width="0.5" fill="none"/>
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" fill="none" opacity="0.55"/>
+          </g>
+          <!-- LAYER 5 (Carrier RAN - emphasis layer) -->
+          <g transform="translate(120 220)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl5)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL5)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR5)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.45)" stroke-width="1" fill="none"/>
+            <path d="M8 0 L150 -46 L292 0" stroke="rgba(255,255,255,0.12)" stroke-width="0.5" fill="none"/>
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" fill="none" opacity="0.5"/>
+          </g>
+          <!-- LAYER 4 -->
+          <g transform="translate(120 275)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl4)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL4)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR4)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.35)" stroke-width="0.8" fill="none"/>
+            <path d="M8 0 L150 -46 L292 0" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="none"/>
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.35)" stroke-width="0.5" fill="none" opacity="0.5"/>
+          </g>
+          <!-- LAYER 3 -->
+          <g transform="translate(120 330)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl3)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL3)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR3)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.28)" stroke-width="0.7" fill="none"/>
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.4)" stroke-width="0.5" fill="none" opacity="0.5"/>
+          </g>
+          <!-- LAYER 2 -->
+          <g transform="translate(120 385)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl2)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL2)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR2)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.22)" stroke-width="0.6" fill="none"/>
+            <path d="M0 0 L150 50 L300 0" stroke="rgba(0,0,0,0.45)" stroke-width="0.5" fill="none" opacity="0.55"/>
+          </g>
+          <!-- LAYER 1 (bottom, darkest) -->
+          <g transform="translate(120 440)">
+            <path d="M0 0 L150 -50 L300 0 L150 50 Z" fill="url(#hl1)"/>
+            <path d="M0 0 L0 25 L150 75 L150 50 Z" fill="url(#sideL1)"/>
+            <path d="M300 0 L300 25 L150 75 L150 50 Z" fill="url(#sideR1)"/>
+            <path d="M0 0 L150 -50" stroke="rgba(255,255,255,0.18)" stroke-width="0.6" fill="none"/>
+          </g>
+        </g>
+
+        <!-- Data flow indicator: pulsing dot traveling down the spine of the stack -->
+        <g>
+          <circle cx="270" cy="60" r="2.5" fill="#FFFFFF" opacity="0">
+            <animate attributeName="cy" values="60;490;60" dur="4.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.92;1" dur="4.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="270" cy="60" r="6" fill="#00AFAA" opacity="0" filter="url(#dotGlow)">
+            <animate attributeName="cy" values="60;490;60" dur="4.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.08;0.92;1" dur="4.5s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+
+        <!-- Connection lines from devices to the stack base (Layer 1, ~y=440) -->
+        <g stroke="rgba(0,175,170,0.18)" stroke-width="0.6" fill="none">
+          <line x1="60" y1="160" x2="200" y2="430"/>
+          <line x1="50" y1="270" x2="180" y2="420"/>
+          <line x1="40" y1="380" x2="220" y2="450"/>
+          <line x1="100" y1="460" x2="260" y2="475"/>
+          <line x1="490" y1="180" x2="370" y2="425"/>
+          <line x1="510" y1="280" x2="380" y2="445"/>
+          <line x1="495" y1="400" x2="365" y2="465"/>
+          <line x1="430" y1="500" x2="320" y2="480"/>
+          <line x1="270" y1="40" x2="270" y2="80"/>
+          <line x1="180" y1="50" x2="240" y2="100"/>
+          <line x1="370" y1="55" x2="300" y2="100"/>
+        </g>
+
+        <!-- Mini device icons floating in space -->
+        <!-- Truck (left, mid) -->
+        <g transform="translate(36 256)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.65">
+          <rect x="0" y="0" width="14" height="9" rx="1"/>
+          <path d="M14 3h5l3 3v3h-8z"/>
+          <circle cx="5" cy="11" r="1.5" fill="#4FCDC9"/>
+          <circle cx="17" cy="11" r="1.5" fill="#4FCDC9"/>
+        </g>
+        <!-- Building (left, top) -->
+        <g transform="translate(40 122)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.7">
+          <rect x="0" y="0" width="16" height="20"/>
+          <line x1="4" y1="4" x2="6" y2="4"/><line x1="10" y1="4" x2="12" y2="4"/>
+          <line x1="4" y1="9" x2="6" y2="9"/><line x1="10" y1="9" x2="12" y2="9"/>
+          <line x1="4" y1="14" x2="6" y2="14"/><line x1="10" y1="14" x2="12" y2="14"/>
+        </g>
+        <!-- Sensor (right, top) -->
+        <g transform="translate(478 168)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.65">
+          <rect x="0" y="3" width="14" height="9" rx="1"/>
+          <line x1="7" y1="0" x2="7" y2="3"/>
+          <circle cx="7" cy="0" r="1" fill="#4FCDC9"/>
+          <circle cx="4" cy="7.5" r="0.8" fill="#4FCDC9"/>
+        </g>
+        <!-- Cell tower (right, mid-low) -->
+        <g transform="translate(488 360)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.7">
+          <line x1="6" y1="0" x2="6" y2="18" stroke-width="1.2"/>
+          <path d="M0 4 L12 4"/>
+          <path d="M2 8 L10 8"/>
+          <path d="M4 12 L8 12"/>
+          <line x1="3" y1="18" x2="9" y2="18" stroke-width="1.4"/>
+        </g>
+        <!-- Vehicle (bottom, left of center) -->
+        <g transform="translate(80 472)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.6">
+          <path d="M2 6 L4 1h10l2 5 z"/>
+          <line x1="2" y1="6" x2="18" y2="6"/>
+          <circle cx="6" cy="8" r="1.2" fill="#4FCDC9"/>
+          <circle cx="14" cy="8" r="1.2" fill="#4FCDC9"/>
+        </g>
+        <!-- Container (top center-left) -->
+        <g transform="translate(220 30)" stroke="#4FCDC9" stroke-width="1" fill="none" opacity="0.55">
+          <rect x="0" y="0" width="16" height="10"/>
+          <line x1="4" y1="0" x2="4" y2="10"/>
+          <line x1="8" y1="0" x2="8" y2="10"/>
+          <line x1="12" y1="0" x2="12" y2="10"/>
+        </g>
+
+        <!-- Floating dots (the network of connected devices) -->
+        <g>
+          <circle cx="60" cy="160" r="3" fill="#00AFAA"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+          <circle cx="50" cy="270" r="2.5" fill="#4FCDC9" opacity="0.7"/>
+          <circle cx="40" cy="380" r="3" fill="#00AFAA"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="4s" repeatCount="indefinite" begin="0.5s"/></circle>
+          <circle cx="100" cy="460" r="2" fill="#4FCDC9" opacity="0.6"/>
+          <circle cx="160" cy="495" r="2.5" fill="#00AFAA"><animate attributeName="opacity" values="0.3;0.85;0.3" dur="3s" repeatCount="indefinite" begin="1s"/></circle>
+          <circle cx="490" cy="180" r="3" fill="#00AFAA"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite" begin="1.6s"/></circle>
+          <circle cx="510" cy="280" r="2.5" fill="#4FCDC9" opacity="0.65"/>
+          <circle cx="495" cy="400" r="3" fill="#00AFAA"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="3.6s" repeatCount="indefinite" begin="0.3s"/></circle>
+          <circle cx="430" cy="500" r="2" fill="#4FCDC9" opacity="0.55"/>
+          <circle cx="270" cy="40" r="2.5" fill="#00AFAA"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite" begin="0.9s"/></circle>
+          <circle cx="180" cy="50" r="2" fill="#4FCDC9" opacity="0.6"/>
+          <circle cx="370" cy="55" r="2" fill="#4FCDC9" opacity="0.65"/>
+
+          <!-- Smaller scatter dots -->
+          <circle cx="70" cy="220" r="1.5" fill="#4FCDC9" opacity="0.4"/>
+          <circle cx="60" cy="340" r="1.5" fill="#4FCDC9" opacity="0.45"/>
+          <circle cx="500" cy="220" r="1.5" fill="#4FCDC9" opacity="0.45"/>
+          <circle cx="480" cy="340" r="1.5" fill="#4FCDC9" opacity="0.4"/>
+          <circle cx="470" cy="455" r="1.5" fill="#4FCDC9" opacity="0.4"/>
+          <circle cx="80" cy="495" r="1.5" fill="#4FCDC9" opacity="0.35"/>
+          <circle cx="320" cy="48" r="1.5" fill="#4FCDC9" opacity="0.4"/>
+          <circle cx="220" cy="48" r="1.5" fill="#4FCDC9" opacity="0.4"/>
+        </g>
+
+        <!-- Vertical activity thread + uplink pulse through the stack -->
+        <g stroke="#00AFAA" stroke-width="0.8" fill="none" opacity="0.5">
+          <line x1="270" y1="125" x2="270" y2="450" stroke-dasharray="2 4"/>
+        </g>
+        <circle cx="270" cy="450" r="3.5" fill="#BBEBDD">
+          <animate attributeName="cy" values="450;125;125" dur="5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;1;0" dur="5s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Geographic labels (subtle) -->
+        <g font-family="JetBrains Mono, monospace" font-size="7" font-weight="500" letter-spacing="0.12em" fill="#4FCDC9" opacity="0.55">
+          <text x="62" y="148">AKL.NZ</text>
+          <text x="500" y="170" text-anchor="end">HAM.NZ</text>
+          <text x="500" y="392" text-anchor="end">WLG.NZ</text>
+          <text x="42" y="370">CHC.NZ</text>
+          <text x="105" y="450">DUD.NZ</text>
+        </g>
+      </svg>
+
+      <div class="hero-spec-card tl">
+        <span class="dot"></span><b>500,000+</b> devices connected
+      </div>
+      <div class="hero-spec-card tr">
+        <span class="dot"></span><b>99.3%</b> NZ &amp; AU coverage
+      </div>
+      <div class="hero-spec-card bl">
+        <span class="dot"></span><b>Spark NZ</b> nationwide network
+      </div>
+      <div class="hero-spec-card br">
+        <span class="dot"></span><b>10+ yrs</b> in operation
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<section class="logo-strip">
+  <div class="container">
+    <p class="logo-strip-label">Trusted by NZ organisations across retail, healthcare, security, agriculture &amp; more</p>
+    <div class="logo-strip-row reveal-children">
+      <div class="logo-item" aria-label="AFAM">
+        <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
+          <!-- AFAM: industrial bold wordmark with subtle structural mark -->
+          <g fill="currentColor">
+            <!-- Architectural triangle mark -->
+            <path d="M6 36 L18 8 L30 36 L25 36 L18 19 L11 36 Z M14 28 L22 28 L23 32 L13 32 Z" opacity="0.55"/>
+            <!-- Refined wordmark, heavy weight, tight tracking -->
+            <text x="40" y="32" font-family="Titillium Web, system-ui, sans-serif" font-size="26" font-weight="900" letter-spacing="2.5">AFAM</text>
+            <!-- Small subline reads "Fire &amp; Alert" for enterprise context -->
+            <text x="40" y="44" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" font-weight="500" letter-spacing="2" opacity="0.55">FIRE &amp; ALERT</text>
+          </g>
+        </svg>
+      </div>
+      <div class="logo-item" aria-label="COMS Systems">
+        <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
+          <!-- COMS Systems: two-line stacked wordmark with subtle dot mark -->
+          <g fill="currentColor">
+            <!-- Small dot-cluster mark -->
+            <circle cx="10" cy="18" r="2.5"/>
+            <circle cx="20" cy="18" r="2.5" opacity="0.7"/>
+            <circle cx="30" cy="18" r="2.5" opacity="0.45"/>
+            <rect x="6" y="28" width="28" height="1.2" opacity="0.4"/>
+            <!-- Stacked wordmark -->
+            <text x="46" y="22" font-family="Titillium Web, system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="1">COMS</text>
+            <text x="46" y="38" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="3" opacity="0.65">SYSTEMS</text>
+          </g>
+        </svg>
+      </div>
+      <div class="logo-item" aria-label="Powertec">
+        <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
+          <!-- Powertec: italic wordmark with energy chevron -->
+          <g fill="currentColor">
+            <!-- Forward-leaning chevron -->
+            <path d="M8 30 L18 12 L20 12 L14 22 L24 22 L14 36 L18 26 L10 26 Z" opacity="0.65"/>
+            <!-- Wordmark with subtle italic angle via skew (font-style italic) -->
+            <text x="34" y="29" font-family="Titillium Web, system-ui, sans-serif" font-size="22" font-weight="700" font-style="italic" letter-spacing="-0.3">Powertec</text>
+            <text x="34" y="42" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" font-weight="500" letter-spacing="2" opacity="0.5">ENERGY INFRASTRUCTURE</text>
+          </g>
+        </svg>
+      </div>
+      <div class="logo-item" aria-label="Global Marine">
+        <svg viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
+          <!-- Global Marine: refined compass mark + serif-tinged wordmark -->
+          <g fill="none" stroke="currentColor" stroke-linecap="round">
+            <circle cx="16" cy="24" r="11" stroke-width="1.2" opacity="0.85"/>
+            <circle cx="16" cy="24" r="6" stroke-width="0.8" opacity="0.5"/>
+            <path d="M16 13 L16 35 M5 24 L27 24" stroke-width="0.8" opacity="0.7"/>
+            <!-- Compass needle (north) -->
+            <path d="M16 15 L18.5 24 L16 22 L13.5 24 Z" fill="currentColor" stroke="none" opacity="0.95"/>
+          </g>
+          <g fill="currentColor">
+            <text x="36" y="22" font-family="Titillium Web, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="3.5">GLOBAL</text>
+            <text x="36" y="38" font-family="Titillium Web, system-ui, sans-serif" font-size="14" font-weight="300" letter-spacing="3.5">MARINE</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="stack" id="stack">
+  <div class="orb teal drift" style="width: 460px; height: 460px; top: -80px; left: -120px;"></div>
+  <div class="orb mint drift-slow" style="width: 380px; height: 380px; bottom: -100px; right: -100px;"></div>
+  <div class="container stack-inner">
+    <div class="section-header reveal">
+      <span class="eyebrow">The Stack</span>
+      <h2 class="h-1">Owned end-to-end. From SIM to dashboard.</h2>
+      <p>
+        We don't just resell SIM cards. M2M One operates the full connectivity stack on Spark's
+        network: IPX backbone, private VPN, control centre, and NZ-based support. Your fleet stays
+        online when it matters most.
+      </p>
+    </div>
+
+    <div class="stack-diagram">
+      <div class="stack-annotations left">
+        <div class="stack-anno"><div class="num">Layer 7</div><div class="name">Customer Applications</div><div class="desc">Your dashboards, ERP, telematics platforms</div></div>
+        <div class="stack-anno"><div class="num">Layer 6</div><div class="name">Control Centre &amp; APIs</div><div class="desc">Provisioning, monitoring, billing, analytics</div></div>
+        <div class="stack-anno"><div class="num">Layer 5</div><div class="name">Cellular VPN &amp; Security</div><div class="desc">Private tunnels over dedicated mobile networks</div></div>
+        <div class="stack-anno"><div class="num">Layer 4</div><div class="name">IPX Backbone</div><div class="desc">Carrier-grade interconnect with managed failover</div></div>
+      </div>
+
+      <div class="stack-visual" aria-hidden="true">
+        <svg viewBox="0 0 360 460" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sl7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#BBEBDD"/><stop offset="100%" stop-color="#92DCC6"/></linearGradient>
+            <linearGradient id="sl6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#92DCC6"/><stop offset="100%" stop-color="#4FCDC9"/></linearGradient>
+            <linearGradient id="sl5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4FCDC9"/><stop offset="100%" stop-color="#00AFAA"/></linearGradient>
+            <linearGradient id="sl4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00AFAA"/><stop offset="100%" stop-color="#00807C"/></linearGradient>
+            <linearGradient id="sl3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00677A"/><stop offset="100%" stop-color="#00485A"/></linearGradient>
+            <linearGradient id="sl2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00485A"/><stop offset="100%" stop-color="#003640"/></linearGradient>
+            <linearGradient id="sl1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#003640"/><stop offset="100%" stop-color="#001620"/></linearGradient>
+          </defs>
+          <g transform="translate(60 30)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl7)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#7BCFB5"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#5EC0A4"/></g>
+          <g transform="translate(60 80)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl6)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#3FB7B0"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#2EA295"/></g>
+          <g transform="translate(60 130)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl5)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#009A95"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#008580"/></g>
+          <g transform="translate(60 180)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl4)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#006D69"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#005955"/></g>
+          <g transform="translate(60 230)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl3)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#003E4D"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#002F3B"/></g>
+          <g transform="translate(60 280)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl2)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#002830"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#001D24"/></g>
+          <g transform="translate(60 330)"><path d="M0 0 L120 -40 L240 0 L120 40 Z" fill="url(#sl1)"/><path d="M0 0 L0 22 L120 62 L120 40 Z" fill="#001620"/><path d="M240 0 L240 22 L120 62 L120 40 Z" fill="#000F18"/></g>
+
+          <g stroke="#00AFAA" stroke-width="0.8" fill="none" opacity="0.5">
+            <line x1="180" y1="40" x2="180" y2="370" stroke-dasharray="2 3"/>
+          </g>
+          <circle cx="180" cy="370" r="3" fill="#BBEBDD">
+            <animate attributeName="cy" values="370;40;40" dur="4s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;1;0" dur="4s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="stack-annotations right">
+        <div class="stack-anno"><div class="num">Layer 3</div><div class="name">Carrier RAN</div><div class="desc">Spark NZ nationwide network</div></div>
+        <div class="stack-anno"><div class="num">Layer 2</div><div class="name">Industrial SIM</div><div class="desc">All form factors, machine-grade</div></div>
+        <div class="stack-anno"><div class="num">Layer 1</div><div class="name">Field Hardware</div><div class="desc">Routers, modems, sensors, gateways</div></div>
+        <div class="stack-anno"><div class="num">+ Iridium®</div><div class="name">Satellite Failover</div><div class="desc">Where mobile can't reach</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIGURATOR -->
+{{> plan-finder }}
+
+<!-- SOLUTIONS BLOCK -->
+<section class="solutions-block" id="solutions">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Solutions</span>
+      <h2 class="h-1">Connectivity that scales with your fleet.</h2>
+      <p>Four building blocks. One platform. Whether you connect 5 SIMs or 50,000, the same control plane, the same Spark connectivity, the same NZ-based support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION 1 - SIM CARDS -->
+<section class="solution">
+  <div class="container solution-inner">
+    <div class="solution-copy reveal">
+      <span class="eyebrow">Solution 01 · SIM</span>
+      <h2 class="h-2">M2M SIM Cards</h2>
+      <p>IoT SIM cards on Spark's nationwide network — covering 99.3% of New Zealand. Five form factors from standard plug-in to industrial-grade and machine solderable, with automatic activation on every SIM.</p>
+      <ul class="solution-list">
+        <li>Automatic activation — insert and go</li>
+        <li>4G LTE, 5G, LTE-M, and NB-IoT supported</li>
+        <li>Standard 2FF, Micro, Nano, Industrial, and eSIMs</li>
+      </ul>
+      <a href="/connectivity/sim-cards.html" class="link-cta">View IoT SIM cards <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+    </div>
+    <div class="solution-visual reveal" aria-hidden="true">
+      <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="simGrad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F0F4F5"/></linearGradient>
+          <linearGradient id="contactGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D4B870"/><stop offset="100%" stop-color="#B89A56"/></linearGradient>
+        </defs>
+        <g transform="translate(140 70) rotate(-8)">
+          <rect width="220" height="170" rx="10" fill="url(#simGrad1)" stroke="#CDD3D6" stroke-width="1"/>
+          <path d="M10 0 L10 12 L0 12" fill="none" stroke="#CDD3D6" stroke-width="1"/>
+          <g transform="translate(30 30)"><rect width="80" height="60" rx="6" fill="url(#contactGrad)"/><line x1="0" y1="20" x2="80" y2="20" stroke="#A3863F" stroke-width="0.8"/><line x1="0" y1="40" x2="80" y2="40" stroke="#A3863F" stroke-width="0.8"/><line x1="40" y1="0" x2="40" y2="60" stroke="#A3863F" stroke-width="0.8"/></g>
+          <text x="130" y="48" font-family="Titillium Web" font-size="11" font-weight="700" fill="#003640">M2M ONE</text>
+          <text x="130" y="62" font-family="JetBrains Mono, monospace" font-size="7" fill="#666666" letter-spacing="0.5">2FF · 25×15mm</text>
+          <text x="130" y="120" font-family="JetBrains Mono, monospace" font-size="6" fill="#8A9499" letter-spacing="0.3">8961 0489 1234 5678 9012</text>
+        </g>
+        <g transform="translate(80 130) rotate(4)">
+          <rect width="170" height="135" rx="9" fill="url(#simGrad1)" stroke="#CDD3D6" stroke-width="1"/>
+          <path d="M8 0 L8 10 L0 10" fill="none" stroke="#CDD3D6" stroke-width="1"/>
+          <g transform="translate(20 22)"><rect width="65" height="48" rx="5" fill="url(#contactGrad)"/><line x1="0" y1="16" x2="65" y2="16" stroke="#A3863F" stroke-width="0.8"/><line x1="0" y1="32" x2="65" y2="32" stroke="#A3863F" stroke-width="0.8"/><line x1="32.5" y1="0" x2="32.5" y2="48" stroke="#A3863F" stroke-width="0.8"/></g>
+          <text x="100" y="36" font-family="Titillium Web" font-size="9" font-weight="700" fill="#003640">M2M ONE</text>
+          <text x="100" y="48" font-family="JetBrains Mono, monospace" font-size="6" fill="#666" letter-spacing="0.4">3FF · 15×12mm</text>
+        </g>
+        <g transform="translate(220 220) rotate(-3)">
+          <rect width="120" height="100" rx="7" fill="url(#simGrad1)" stroke="#CDD3D6" stroke-width="1"/>
+          <path d="M6 0 L6 8 L0 8" fill="none" stroke="#CDD3D6" stroke-width="1"/>
+          <g transform="translate(15 18)"><rect width="50" height="38" rx="4" fill="url(#contactGrad)"/><line x1="0" y1="12" x2="50" y2="12" stroke="#A3863F" stroke-width="0.8"/><line x1="0" y1="26" x2="50" y2="26" stroke="#A3863F" stroke-width="0.8"/><line x1="25" y1="0" x2="25" y2="38" stroke="#A3863F" stroke-width="0.8"/></g>
+          <text x="73" y="28" font-family="Titillium Web" font-size="7" font-weight="700" fill="#003640">M2M ONE</text>
+          <text x="73" y="38" font-family="JetBrains Mono, monospace" font-size="5" fill="#666">4FF</text>
+        </g>
+        <g font-family="JetBrains Mono, monospace" font-size="7" fill="#003640" font-weight="500" letter-spacing="1.5">
+          <text x="380" y="100">2FF</text><text x="380" y="173">3FF</text><text x="380" y="260">4FF</text>
+          <line x1="378" y1="98" x2="362" y2="98" stroke="#003640" stroke-width="0.8"/>
+          <line x1="378" y1="171" x2="252" y2="171" stroke="#003640" stroke-width="0.8" opacity="0.4"/>
+          <line x1="378" y1="258" x2="340" y2="258" stroke="#003640" stroke-width="0.8" opacity="0.6"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION 2 - DATA -->
+<section class="solution solution--reverse">
+  <div class="container solution-inner">
+    <div class="solution-copy reveal">
+      <span class="eyebrow">Solution 02 · Data</span>
+      <h2 class="h-2">M2M Data Plans</h2>
+      <p>Flexible data plans designed for IoT devices — from smart meters using kilobytes to security cameras consuming gigabytes. Individual capped plans and pooled group options, all with no lock-in contracts.</p>
+      <ul class="solution-list">
+        <li>Plans from 0.5 MB to 1 TB</li>
+        <li>Pooled data across your fleet</li>
+        <li>Usage alerts and automated thresholds</li>
+      </ul>
+      <a href="/connectivity/data-plans.html" class="link-cta">Browse data plans <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+    </div>
+    <div class="solution-visual reveal" aria-hidden="true">
+      <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="40" width="420" height="320" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+        <line x1="40" y1="80" x2="460" y2="80" stroke="#E5E7EB" stroke-width="1"/>
+        <circle cx="58" cy="60" r="4" fill="#00AFAA"/>
+        <text x="70" y="64" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" fill="#003640" letter-spacing="0.5">DATA · FLEET 247</text>
+        <text x="380" y="64" font-family="JetBrains Mono, monospace" font-size="8" fill="#8A9499">30D ›</text>
+        <text x="60" y="118" font-family="JetBrains Mono, monospace" font-size="8" fill="#666666" letter-spacing="0.5">POOLED USAGE</text>
+        <text x="60" y="148" font-family="Titillium Web" font-size="28" font-weight="700" fill="#003640">142.6 <tspan font-size="16" fill="#666">GB</tspan></text>
+        <text x="60" y="166" font-family="JetBrains Mono, monospace" font-size="8" fill="#00AFAA" font-weight="600">▲ 8.4% vs prior</text>
+        <g transform="translate(280 110)">
+          <rect width="160" height="58" rx="6" fill="#EDF7F3"/>
+          <text x="14" y="22" font-family="JetBrains Mono, monospace" font-size="8" fill="#00807C" font-weight="600" letter-spacing="0.5">SIMS ONLINE</text>
+          <text x="14" y="44" font-family="Titillium Web" font-size="20" font-weight="700" fill="#003640">1,284 / 1,290</text>
+        </g>
+        <g transform="translate(60 200)">
+          <line x1="0" y1="40" x2="380" y2="40" stroke="#00AFAA" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+          <text x="382" y="44" font-family="JetBrains Mono, monospace" font-size="7" fill="#00807C" font-weight="600">THRESHOLD</text>
+          <rect x="0" y="60" width="22" height="60" fill="#003640" rx="2"/>
+          <rect x="32" y="48" width="22" height="72" fill="#003640" rx="2"/>
+          <rect x="64" y="55" width="22" height="65" fill="#003640" rx="2"/>
+          <rect x="96" y="42" width="22" height="78" fill="#003640" rx="2"/>
+          <rect x="128" y="50" width="22" height="70" fill="#003640" rx="2"/>
+          <rect x="160" y="35" width="22" height="85" fill="#00485A" rx="2"/>
+          <rect x="192" y="25" width="22" height="95" fill="#00485A" rx="2"/>
+          <rect x="224" y="20" width="22" height="100" fill="#00AFAA" rx="2"/>
+          <rect x="256" y="32" width="22" height="88" fill="#00485A" rx="2"/>
+          <rect x="288" y="38" width="22" height="82" fill="#003640" rx="2"/>
+          <rect x="320" y="45" width="22" height="75" fill="#003640" rx="2"/>
+          <rect x="352" y="50" width="22" height="70" fill="#003640" rx="2"/>
+          <line x1="0" y1="120" x2="380" y2="120" stroke="#E5E7EB" stroke-width="1"/>
+          <g font-family="JetBrains Mono, monospace" font-size="7" fill="#8A9499">
+            <text x="0" y="138">W1</text><text x="96" y="138">W2</text><text x="192" y="138">W3</text><text x="288" y="138">W4</text>
+          </g>
+        </g>
+        <g transform="translate(60 348)">
+          <circle cx="4" cy="0" r="3" fill="#00AFAA"/>
+          <text x="14" y="4" font-family="JetBrains Mono, monospace" font-size="8" fill="#666666">All thresholds nominal</text>
+          <text x="220" y="4" font-family="JetBrains Mono, monospace" font-size="8" fill="#8A9499">Updated 2m ago</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION 3 - SATELLITE -->
+<section class="solution">
+  <div class="container solution-inner">
+    <div class="solution-copy reveal">
+      <span class="eyebrow">Solution 03 · Satellite</span>
+      <h2 class="h-2">Satellite Connectivity Plans</h2>
+      <p class="solution-tagline">Reliable coverage. Even where mobile can't reach.</p>
+      <p>Whether you're operating in remote regions, offshore, or on the move, M2M One's Satellite Connectivity Plans keep your IoT devices online where traditional networks fall short.</p>
+      <ul class="solution-list">
+        <li>Flexible data plans</li>
+        <li>Powered by Iridium® and Blue Sky Network</li>
+        <li>Works with existing hardware</li>
+        <li>Transparent pricing</li>
+        <li>Full New Zealand support</li>
+      </ul>
+      <a href="/satellite/airtime.html" class="link-cta">Explore Satellite Airtime plans <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+    </div>
+    <div class="solution-visual reveal" aria-hidden="true">
+      <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="spaceBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F7F8F9"/>
+            <stop offset="100%" stop-color="#EDF2F4"/>
+          </linearGradient>
+          <linearGradient id="earthSurface" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#00485A"/>
+            <stop offset="50%" stop-color="#003640"/>
+            <stop offset="100%" stop-color="#001E26"/>
+          </linearGradient>
+          <radialGradient id="atmosphereGlow" cx="0.5" cy="1" r="0.85">
+            <stop offset="60%" stop-color="rgba(0,175,170,0)"/>
+            <stop offset="80%" stop-color="rgba(0,175,170,0.08)"/>
+            <stop offset="92%" stop-color="rgba(0,175,170,0.18)"/>
+            <stop offset="100%" stop-color="rgba(0,175,170,0)"/>
+          </radialGradient>
+          <radialGradient id="beamGrad" cx="0.5" cy="0" r="1">
+            <stop offset="0%" stop-color="rgba(0,175,170,0.35)"/>
+            <stop offset="60%" stop-color="rgba(0,175,170,0.10)"/>
+            <stop offset="100%" stop-color="rgba(0,175,170,0)"/>
+          </radialGradient>
+          <clipPath id="earthClip">
+            <path d="M 0 400 L 0 280 A 800 800 0 0 1 500 280 L 500 400 Z"/>
+          </clipPath>
+        </defs>
+
+        <!-- Background -->
+        <rect x="0" y="0" width="500" height="400" fill="url(#spaceBg)"/>
+
+        <!-- Stars in space (subtle) -->
+        <g fill="rgba(0,54,64,0.25)">
+          <circle cx="40" cy="30" r="0.8"/><circle cx="95" cy="55" r="0.6"/>
+          <circle cx="155" cy="22" r="0.8"/><circle cx="220" cy="65" r="0.5"/>
+          <circle cx="285" cy="38" r="0.7"/><circle cx="345" cy="60" r="0.8"/>
+          <circle cx="405" cy="32" r="0.6"/><circle cx="460" cy="58" r="0.7"/>
+          <circle cx="65" cy="120" r="0.6"/><circle cx="180" cy="100" r="0.5"/>
+          <circle cx="320" cy="115" r="0.7"/><circle cx="430" cy="110" r="0.5"/>
+          <circle cx="25" cy="180" r="0.6"/><circle cx="475" cy="175" r="0.6"/>
+        </g>
+
+        <!-- Atmospheric glow above Earth horizon -->
+        <ellipse cx="250" cy="400" rx="300" ry="120" fill="url(#atmosphereGlow)"/>
+
+        <!-- Earth (curved horizon, not a giant ellipse) -->
+        <g clip-path="url(#earthClip)">
+          <path d="M 0 400 L 0 280 A 800 800 0 0 1 500 280 L 500 400 Z" fill="url(#earthSurface)"/>
+
+          <!-- Latitude reference lines (very subtle, on the visible horizon) -->
+          <g fill="none" stroke="rgba(0,175,170,0.14)" stroke-width="0.6">
+            <path d="M 0 320 A 800 800 0 0 1 500 320" stroke-dasharray="4 4"/>
+            <path d="M 0 360 A 800 800 0 0 1 500 360" stroke-dasharray="4 4"/>
+          </g>
+
+          <!-- Australasia landmass suggestion (positioned relative to horizon arc) -->
+          <g fill="rgba(0,175,170,0.22)" stroke="rgba(0,175,170,0.45)" stroke-width="0.5">
+            <!-- Australia silhouette (stylised, geographically suggestive) -->
+            <path d="M 130 312 Q 155 304 185 308 Q 215 305 240 312 Q 260 320 270 332 Q 268 344 252 348 Q 230 352 205 348 Q 175 350 145 342 Q 130 332 130 320 Z"/>
+            <!-- Tasmania -->
+            <ellipse cx="222" cy="362" rx="6" ry="3"/>
+            <!-- New Zealand (north and south islands) -->
+            <path d="M 305 322 Q 318 318 322 326 Q 318 336 308 332 Z"/>
+            <path d="M 320 340 Q 333 336 340 348 Q 335 360 322 354 Z"/>
+          </g>
+
+          <!-- Ground station markers (M2M One reach points) -->
+          <g>
+            <!-- Auckland NZ (primary, prominent pulse) -->
+            <circle cx="320" cy="338" r="2.5" fill="#00AFAA"/>
+            <circle cx="320" cy="338" r="6" fill="none" stroke="#00AFAA" stroke-width="0.6" opacity="0.5">
+              <animate attributeName="r" values="3;9;3" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Wellington NZ -->
+            <circle cx="328" cy="346" r="2" fill="#00AFAA"/>
+            <!-- Christchurch NZ -->
+            <circle cx="326" cy="352" r="2" fill="#00AFAA"/>
+            <!-- Dunedin NZ (southern reach, secondary pulse) -->
+            <circle cx="324" cy="358" r="2.5" fill="#00AFAA"/>
+            <circle cx="324" cy="358" r="6" fill="none" stroke="#00AFAA" stroke-width="0.6" opacity="0.45">
+              <animate attributeName="r" values="3;9;3" dur="3s" repeatCount="indefinite" begin="1.4s"/>
+              <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite" begin="1.4s"/>
+            </circle>
+          </g>
+        </g>
+
+        <!-- Earth horizon line (bright edge) -->
+        <path d="M 0 280 A 800 800 0 0 1 500 280" fill="none" stroke="rgba(0,175,170,0.35)" stroke-width="0.8"/>
+
+        <!-- Orbital path (polar, traversing the sky) -->
+        <path d="M 30 240 Q 250 95 470 240" fill="none" stroke="#00AFAA" stroke-width="1" stroke-dasharray="3 5" opacity="0.55"/>
+        <path d="M 50 270 Q 250 145 450 270" fill="none" stroke="#4FCDC9" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.35"/>
+
+        <!-- Cross-link lines between satellites in constellation -->
+        <g stroke="rgba(0,175,170,0.4)" stroke-width="0.6" fill="none" stroke-dasharray="1.5 2">
+          <line x1="92" y1="200" x2="190" y2="135"/>
+          <line x1="190" y1="135" x2="310" y2="118"/>
+          <line x1="310" y1="118" x2="408" y2="155"/>
+          <line x1="408" y1="155" x2="450" y2="210"/>
+        </g>
+
+        <!-- Constellation satellites (smaller, in formation along the orbit) -->
+        <!-- Far left satellite -->
+        <g transform="translate(92 200)" opacity="0.7">
+          <rect x="-5" y="-3" width="10" height="6" fill="#003640" stroke="#00AFAA" stroke-width="0.8"/>
+          <rect x="-13" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+          <rect x="6" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+        </g>
+        <!-- Mid-left satellite -->
+        <g transform="translate(190 135)" opacity="0.85">
+          <rect x="-5" y="-3" width="10" height="6" fill="#003640" stroke="#00AFAA" stroke-width="0.8"/>
+          <rect x="-13" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+          <rect x="6" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+        </g>
+
+        <!-- Primary satellite (centre, detailed) -->
+        <g transform="translate(310 118)">
+          <!-- Solar panels (left) -->
+          <rect x="-32" y="-4" width="22" height="8" fill="#00485A" stroke="#00AFAA" stroke-width="0.8"/>
+          <line x1="-29" y1="-4" x2="-29" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="-25" y1="-4" x2="-25" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="-21" y1="-4" x2="-21" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="-17" y1="-4" x2="-17" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="-13" y1="-4" x2="-13" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <!-- Solar panels (right) -->
+          <rect x="10" y="-4" width="22" height="8" fill="#00485A" stroke="#00AFAA" stroke-width="0.8"/>
+          <line x1="13" y1="-4" x2="13" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="17" y1="-4" x2="17" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="21" y1="-4" x2="21" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="25" y1="-4" x2="25" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <line x1="29" y1="-4" x2="29" y2="4" stroke="#00AFAA" stroke-width="0.5"/>
+          <!-- Body -->
+          <rect x="-10" y="-7" width="20" height="14" fill="#003640" stroke="#00AFAA" stroke-width="1"/>
+          <rect x="-7" y="-4" width="14" height="3" fill="#00AFAA" opacity="0.6"/>
+          <!-- Antenna -->
+          <line x1="0" y1="-7" x2="0" y2="-14" stroke="#00AFAA" stroke-width="1"/>
+          <circle cx="0" cy="-15" r="2" fill="#00AFAA"/>
+          <!-- Earth-facing antenna -->
+          <path d="M -3 7 L -5 12 L 5 12 L 3 7 Z" fill="#00485A" stroke="#00AFAA" stroke-width="0.7"/>
+        </g>
+
+        <!-- Mid-right satellite -->
+        <g transform="translate(408 155)" opacity="0.85">
+          <rect x="-5" y="-3" width="10" height="6" fill="#003640" stroke="#00AFAA" stroke-width="0.8"/>
+          <rect x="-13" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+          <rect x="6" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+        </g>
+        <!-- Far right satellite -->
+        <g transform="translate(450 210)" opacity="0.65">
+          <rect x="-5" y="-3" width="10" height="6" fill="#003640" stroke="#00AFAA" stroke-width="0.8"/>
+          <rect x="-13" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+          <rect x="6" y="-1.5" width="7" height="3" fill="#00485A" stroke="#00AFAA" stroke-width="0.5"/>
+        </g>
+
+        <!-- Coverage beam from primary satellite to ground -->
+        <g>
+          <path d="M 304 130 L 240 290 L 380 290 L 316 130 Z" fill="url(#beamGrad)"/>
+          <line x1="304" y1="130" x2="240" y2="290" stroke="rgba(0,175,170,0.4)" stroke-width="0.6" stroke-dasharray="2 3"/>
+          <line x1="316" y1="130" x2="380" y2="290" stroke="rgba(0,175,170,0.4)" stroke-width="0.6" stroke-dasharray="2 3"/>
+        </g>
+
+        <!-- Data packets traveling beam down -->
+        <circle cx="310" cy="125" r="2" fill="#00AFAA">
+          <animate attributeName="cy" values="125;290;290" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="cx" values="310;310;310" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="310" cy="125" r="1.5" fill="#4FCDC9">
+          <animate attributeName="cy" values="125;290;290" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+          <animate attributeName="cx" values="310;330;330" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+        </circle>
+
+        <!-- Technical labels (right side, restrained) -->
+        <g font-family="JetBrains Mono, monospace" letter-spacing="0.08em">
+          <!-- IRIDIUM label -->
+          <line x1="316" y1="118" x2="376" y2="98" stroke="#003640" stroke-width="0.6"/>
+          <text x="380" y="92" font-size="8" font-weight="700" fill="#003640">IRIDIUM®</text>
+          <text x="380" y="102" font-size="6.5" fill="#666666">LEO · 781km · 66 SAT</text>
+
+          <!-- Coverage label -->
+          <line x1="385" y1="240" x2="445" y2="240" stroke="#00AFAA" stroke-width="0.6" stroke-dasharray="1 2"/>
+          <text x="448" y="237" font-size="6.5" fill="#00807C" font-weight="600">COVERAGE</text>
+          <text x="448" y="246" font-size="6" fill="#666666">~4,700 km Ø</text>
+
+          <!-- Earth label -->
+          <text x="20" y="395" font-size="6.5" fill="#003640" font-weight="600">NZ</text>
+          <text x="20" y="380" font-size="6" fill="#666666">36.85°S 174.76°E</text>
+        </g>
+
+        <!-- Constellation orbit indicator -->
+        <g transform="translate(35 50)">
+          <text font-family="JetBrains Mono, monospace" font-size="6.5" font-weight="700" fill="#003640" letter-spacing="0.14em">CONSTELLATION</text>
+          <text y="9" font-family="JetBrains Mono, monospace" font-size="5.5" fill="#666666">6 PLANES · 86.4° INC</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION 4 - DEVICES -->
+<section class="solution solution--reverse" id="devices">
+  <div class="container solution-inner">
+    <div class="solution-copy reveal">
+      <span class="eyebrow">Solution 04 · Hardware</span>
+      <h2 class="h-2">M2M Devices</h2>
+      <p>Cellular routers, gateways, and IoT hardware from Peplink, Semtech (Sierra Wireless), and Robustel — paired with IoT SIM cards and data plans from M2M One. Over 10 years connecting NZ businesses across every sector.</p>
+      <ul class="solution-list">
+        <li>Routers, gateways, and antennas from Peplink, Sierra Wireless, Robustel</li>
+        <li>Satellite terminals and sensors</li>
+        <li>Paired with IoT SIM cards and managed services</li>
+      </ul>
+      <a href="/devices/" class="link-cta">Browse devices <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+    </div>
+    <div class="solution-visual reveal" aria-hidden="true">
+      <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(80 130)">
+          <rect x="0" y="0" width="240" height="80" rx="6" fill="#FFFFFF" stroke="#003640" stroke-width="1.5"/>
+          <g stroke="#CDD3D6" stroke-width="0.8">
+            <line x1="20" y1="14" x2="80" y2="14"/><line x1="20" y1="20" x2="80" y2="20"/><line x1="20" y1="26" x2="80" y2="26"/>
+          </g>
+          <g>
+            <circle cx="200" cy="20" r="3" fill="#00AFAA"/><circle cx="212" cy="20" r="3" fill="#00AFAA" opacity="0.6"/><circle cx="224" cy="20" r="3" fill="#CDD3D6"/>
+            <text x="200" y="38" font-family="JetBrains Mono, monospace" font-size="5" fill="#666" letter-spacing="0.5">PWR · LTE · SIM</text>
+          </g>
+          <text x="20" y="55" font-family="Titillium Web" font-size="11" font-weight="700" fill="#003640">M2M GATEWAY</text>
+          <text x="20" y="68" font-family="JetBrains Mono, monospace" font-size="6" fill="#666666" letter-spacing="0.5">INDUSTRIAL CELLULAR ROUTER</text>
+          <line x1="40" y1="0" x2="40" y2="-30" stroke="#003640" stroke-width="2" stroke-linecap="round"/>
+          <line x1="80" y1="0" x2="80" y2="-40" stroke="#003640" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="40" cy="-30" r="2.5" fill="#003640"/><circle cx="80" cy="-40" r="2.5" fill="#003640"/>
+          <rect x="-8" y="20" width="8" height="40" fill="#003640" rx="2"/>
+          <rect x="240" y="20" width="8" height="40" fill="#003640" rx="2"/>
+          <g transform="translate(0 80)">
+            <rect x="20" y="0" width="14" height="10" fill="#CDD3D6" stroke="#003640" stroke-width="0.5"/>
+            <rect x="40" y="0" width="14" height="10" fill="#CDD3D6" stroke="#003640" stroke-width="0.5"/>
+            <rect x="60" y="0" width="14" height="10" fill="#CDD3D6" stroke="#003640" stroke-width="0.5"/>
+            <rect x="80" y="0" width="14" height="10" fill="#CDD3D6" stroke="#003640" stroke-width="0.5"/>
+            <circle cx="200" cy="5" r="5" fill="#FFFFFF" stroke="#003640" stroke-width="0.8"/>
+            <circle cx="220" cy="5" r="5" fill="#FFFFFF" stroke="#003640" stroke-width="0.8"/>
+          </g>
+        </g>
+        <g transform="translate(60 250)">
+          <rect x="0" y="0" width="120" height="90" rx="6" fill="#FFFFFF" stroke="#003640" stroke-width="1.5"/>
+          <rect x="14" y="14" width="92" height="36" rx="3" fill="#003640"/>
+          <text x="22" y="32" font-family="Titillium Web" font-size="10" font-weight="700" fill="#00AFAA" letter-spacing="0.5">23.4°C</text>
+          <text x="22" y="44" font-family="JetBrains Mono, monospace" font-size="5" fill="#BBEBDD" letter-spacing="0.4">SENSOR · 0241</text>
+          <circle cx="24" cy="68" r="2.5" fill="#00AFAA"/>
+          <circle cx="34" cy="68" r="2.5" fill="#CDD3D6"/>
+          <circle cx="44" cy="68" r="2.5" fill="#CDD3D6"/>
+          <text x="60" y="72" font-family="Titillium Web" font-size="7" fill="#666">M2M SENSOR</text>
+          <rect x="55" y="-6" width="10" height="6" rx="1" fill="#003640"/>
+        </g>
+        <g transform="translate(290 230)">
+          <ellipse cx="50" cy="100" rx="42" ry="8" fill="#003640" opacity="0.15"/>
+          <rect x="20" y="80" width="60" height="20" rx="3" fill="#FFFFFF" stroke="#003640" stroke-width="1.5"/>
+          <rect x="46" y="20" width="8" height="60" fill="#FFFFFF" stroke="#003640" stroke-width="1.5"/>
+          <ellipse cx="50" cy="20" rx="22" ry="12" fill="#FFFFFF" stroke="#003640" stroke-width="1.5"/>
+          <ellipse cx="50" cy="20" rx="14" ry="7" fill="#003640" opacity="0.1"/>
+          <g fill="none" stroke="#00AFAA" stroke-width="1" opacity="0.6">
+            <path d="M30 8 Q 50 0, 70 8" stroke-dasharray="2 2"/>
+            <path d="M22 0 Q 50 -10, 78 0" stroke-dasharray="2 2" opacity="0.7"/>
+            <path d="M14 -8 Q 50 -22, 86 -8" stroke-dasharray="2 2" opacity="0.5"/>
+          </g>
+          <text x="50" y="115" font-family="JetBrains Mono, monospace" font-size="6" font-weight="600" fill="#003640" text-anchor="middle" letter-spacing="0.5">ANTENNA</text>
+        </g>
+        <line x1="40" y1="345" x2="460" y2="345" stroke="#E5E7EB" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="compare">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Competition</span>
+      <h2 class="h-1">Not just a SIM card. A managed network.</h2>
+      <p>Most carriers stop at the SIM. M2M One owns the connectivity stack from carrier RAN through IPX backbone to the control centre, and supports it from New Zealand.</p>
+    </div>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th class="feature">Capability</th>
+            <th class="us">M2M One</th>
+            <th>Standard Telco</th>
+            <th>DIY / Resellers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature">Industrial-grade SIM form factors (incl. MFF2)</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick partial"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="9" x2="14" y2="9"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">Spark NZ nationwide coverage with AU roaming</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+            <td class="them"><span class="tick partial"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="9" x2="14" y2="9"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">Group data pooling across fleet</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick partial"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="9" x2="14" y2="9"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">IPX private backbone with managed failover</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">Iridium® satellite plans with same support</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">Cellular VPN included with industrial SIMs</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+            <td class="them"><span class="tick no"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l8 8M13 5l-8 8"/></svg></span></td>
+          </tr>
+          <tr>
+            <td class="feature">NZ-based in-house support team</td>
+            <td class="us"><span class="tick yes"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 7 12.5 14.5 5"/></svg></span></td>
+            <td class="them"><span class="tick partial"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="9" x2="14" y2="9"/></svg></span></td>
+            <td class="them"><span class="tick partial"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="9" x2="14" y2="9"/></svg></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES BANNER -->
+<section class="capabilities-banner">
+  <div class="container reveal">
+    <span class="eyebrow">Managed Services</span>
+    <h2 class="h-1">World-class connectivity. Backed by experts.</h2>
+    <p>Industry-leading control centres, in-house IoT specialists, and dedicated IP networking. All in one place.</p>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="services">
+  <div class="container">
+    <div class="services-grid reveal-children">
+      <div class="service-card tilt-card">
+        <div class="service-num">SVC · 01</div>
+        <svg class="service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="5" width="26" height="18" rx="1.5"/>
+          <line x1="3" y1="9" x2="29" y2="9"/>
+          <circle cx="6" cy="7" r="0.7" fill="currentColor"/>
+          <circle cx="8.5" cy="7" r="0.7" fill="currentColor"/>
+          <path d="M7 15l3 3 4-5 4 6 5-4"/>
+          <line x1="11" y1="27" x2="21" y2="27"/>
+          <line x1="16" y1="23" x2="16" y2="27"/>
+        </svg>
+        <h3>Control Centre</h3>
+        <p>Manage your fleet from a single pane of glass. Real-time SIM monitoring, automated provisioning, alerts, diagnostics, and usage analytics.</p>
+        <a href="/connectivity/control-centre.html" class="link-cta">Learn more <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+      </div>
+      <div class="service-card tilt-card">
+        <div class="service-num">SVC · 02</div>
+        <svg class="service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 17a11 11 0 0 1 22 0v6a3 3 0 0 1-3 3h-2v-9h5"/>
+          <path d="M5 17v6a3 3 0 0 0 3 3h2v-9H5"/>
+          <path d="M13 27a4 4 0 0 0 4 0"/>
+        </svg>
+        <h3>Support</h3>
+        <p>In-house experts with deep knowledge of industrial deployments: devices, data, and networks. One team, accountable across all your IoT services.</p>
+        <a href="/support/" class="link-cta">Learn more <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+      </div>
+      <div class="service-card tilt-card">
+        <div class="service-num">SVC · 03</div>
+        <svg class="service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 4a9 9 0 0 0-5 17l1 4h8l1-4a9 9 0 0 0-5-17z"/>
+          <line x1="13" y1="29" x2="19" y2="29"/>
+          <path d="M13 17l3 3 5-5"/>
+        </svg>
+        <h3>Advice</h3>
+        <p>Over a decade of experience designing, integrating, and deploying cellular IoT solutions for NZ businesses. Strategic input from a team that has done it before.</p>
+        <a href="/contact.html" class="link-cta">Learn more <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+      </div>
+      <div class="service-card tilt-card">
+        <div class="service-num">SVC · 04</div>
+        <svg class="service-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 3l10 4v8c0 6-4 11-10 13-6-2-10-7-10-13V7l10-4z"/>
+          <path d="M12 16l3 3 6-6"/>
+        </svg>
+        <h3>VPN Services</h3>
+        <p>Cellular VPN over dedicated mobile networks, paired with our industrial IoT SIMs. End-to-end security for branches, field operations, and connected devices.</p>
+        <a href="/connectivity/vpn.html" class="link-cta">Learn more <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Use Cases</span>
+      <h2 class="h-1">Built for industries that depend on uptime.</h2>
+      <p>From metro cities to remote sites, our connectivity supports operations across every sector that runs on data.</p>
+    </div>
+
+    <div class="industries-grid reveal-children">
+      <a href="/industries/retail-and-pos.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="9" width="14" height="11"/><path d="M16 12h7l3 4v4h-10z"/>
+            <circle cx="7" cy="22" r="2.2" fill="#FFFFFF"/><circle cx="20" cy="22" r="2.2" fill="#FFFFFF"/>
+          </svg>
+          <span class="industry-num">01</span>
+        </div>
+        <span class="industry-label">Retail &amp; POS</span>
+        <span class="industry-meta">EFTPOS · VENDING</span>
+      </a>
+      <a href="/industries/digital-signage.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 3 6 16h6l-2 9 10-13h-7z"/>
+          </svg>
+          <span class="industry-num">02</span>
+        </div>
+        <span class="industry-label">Digital Signage</span>
+        <span class="industry-meta">SCREENS · OOH</span>
+      </a>
+      <a href="/industries/security-and-surveillance.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 22l8-9"/><path d="M11 7l4-4 9 9-4 4-3-3-3 3z"/><line x1="14" y1="10" x2="20" y2="16"/>
+          </svg>
+          <span class="industry-num">03</span>
+        </div>
+        <span class="industry-label">Security &amp; Surveillance</span>
+        <span class="industry-meta">CAMERAS · MONITORING</span>
+      </a>
+      <a href="/industries/smart-agriculture.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 24V11"/><path d="M14 11c0-4-4-7-8-7 0 4 4 7 8 7z"/><path d="M14 14c0-3 3-5 7-5 0 3-3 5-7 5z"/>
+          </svg>
+          <span class="industry-num">04</span>
+        </div>
+        <span class="industry-label">Smart Agriculture</span>
+        <span class="industry-meta">SENSORS · LPWAN</span>
+      </a>
+      <a href="/industries/connected-healthcare.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="7" width="22" height="15" rx="1.5"/>
+            <line x1="14" y1="10" x2="14" y2="19"/><line x1="10" y1="14.5" x2="18" y2="14.5"/>
+            <path d="M9 7V4h10v3"/>
+          </svg>
+          <span class="industry-num">05</span>
+        </div>
+        <span class="industry-label">Connected Healthcare</span>
+        <span class="industry-meta">DEVICES · MHEALTH</span>
+      </a>
+      <a href="/industries/vehicle-and-fleet.html" class="industry-tile tilt-card">
+        <div class="industry-tile-head">
+          <svg class="industry-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 25s8-7 8-14a8 8 0 0 0-16 0c0 7 8 14 8 14z"/><circle cx="14" cy="11" r="3"/>
+          </svg>
+          <span class="industry-num">06</span>
+        </div>
+        <span class="industry-label">Vehicle &amp; Fleet</span>
+        <span class="industry-meta">GPS · TELEMATICS</span>
+      </a>
+    </div>
+
+    <div class="industries-cta">
+      <a href="/industries/" class="link-cta">Explore industry use cases <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="compliance">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Security &amp; Compliance</span>
+      <h2 class="h-1">Enterprise-grade. NZ-operated.</h2>
+      <p>Our network and operations are designed to the standards your compliance team expects, and our control plane stays in New Zealand.</p>
+    </div>
+
+    <div class="compliance-grid reveal-children">
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 4l13 5v9c0 7-5 13-13 16-8-3-13-9-13-16V9l13-5z"/>
+          <path d="M12 18l4 4 8-8"/>
+        </svg>
+        <span class="compliance-name">NZ Privacy<br>Act 2020</span>
+      </div>
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="6" y="14" width="24" height="16" rx="2"/>
+          <path d="M11 14V9a7 7 0 0 1 14 0v5"/>
+          <circle cx="18" cy="22" r="1.5" fill="currentColor"/>
+        </svg>
+        <span class="compliance-name">ISO/IEC<br>27001</span>
+      </div>
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="18" r="13"/>
+          <path d="M18 5a18 18 0 0 1 0 26"/>
+          <path d="M18 5a18 18 0 0 0 0 26"/>
+          <line x1="5" y1="18" x2="31" y2="18"/>
+        </svg>
+        <span class="compliance-name">Carrier<br>Grade IPX</span>
+      </div>
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="8" width="26" height="20" rx="2"/>
+          <line x1="5" y1="14" x2="31" y2="14"/>
+          <circle cx="9" cy="11" r="0.7" fill="currentColor"/>
+          <circle cx="12" cy="11" r="0.7" fill="currentColor"/>
+          <line x1="10" y1="20" x2="22" y2="20"/>
+          <line x1="10" y1="24" x2="18" y2="24"/>
+        </svg>
+        <span class="compliance-name">SOC 2<br>Aligned</span>
+      </div>
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="18" r="13"/>
+          <path d="M11 18l5 5 9-10"/>
+        </svg>
+        <span class="compliance-name">TCF NZ<br>Codes</span>
+      </div>
+      <div class="compliance-badge tilt-card">
+        <svg class="compliance-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="18" r="3"/>
+          <path d="M18 5v3M18 28v3M5 18h3M28 18h3M9 9l2 2M25 25l2 2M9 27l2-2M25 11l2-2"/>
+        </svg>
+        <span class="compliance-name">24/7 NOC<br>NZ Operated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="orb teal drift" style="width: 400px; height: 400px; top: -80px; right: -100px;"></div>
+  <div class="orb mint drift-slow" style="width: 280px; height: 280px; bottom: -50px; left: 10%;"></div>
+  <div class="container why-inner">
+    <div class="why-copy reveal">
+      <span class="eyebrow">Why M2M One</span>
+      <h2 class="h-1">Built for NZ deployments. Backed by local experts.</h2>
+      <p>M2M One NZ is one of New Zealand's most established industrial IoT specialists. SIM cards, data services, managed failover, and advanced IPX data monitoring on Spark's nationwide network, backed by local experts and a control centre built for fleet operations.</p>
+      <ul class="why-list">
+        <li>Industrial IoT specialists in New Zealand</li>
+        <li>SIM and data services on Spark's nationwide network</li>
+        <li>Managed services including IPX data monitoring and failover</li>
+      </ul>
+      <a href="/contact.html" class="btn btn-primary">
+        Chat with an IoT Expert
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg>
+      </a>
+    </div>
+
+    <div class="why-credentials reveal-children">
+      <div class="credential-card tilt-card">
+        <div class="num">10+</div>
+        <div class="label">Years In Operation</div>
+        <div class="desc">Designing and deploying industrial IoT across NZ.</div>
+      </div>
+      <div class="credential-card tilt-card">
+        <div class="num">24/7</div>
+        <div class="label">In-house Support</div>
+        <div class="desc">Auckland-based team supporting NZ deployments nationwide.</div>
+      </div>
+      <div class="credential-card tilt-card">
+        <div class="num">100<span class="accent">%</span></div>
+        <div class="label">NZ Operated</div>
+        <div class="desc">Local team, local Spark coverage, local support.</div>
+      </div>
+      <div class="credential-card tilt-card">
+        <div class="num">IPX</div>
+        <div class="label">Private Backbone</div>
+        <div class="desc">Carrier interconnect with managed failover and monitoring.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS FINAL -->
+<section class="stats-final">
+  <div class="orb teal drift" style="width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.4;"></div>
+  <div class="orb mint drift-slow" style="width: 240px; height: 240px; top: -40px; left: 10%;"></div>
+  <div class="orb blue drift" style="width: 240px; height: 240px; bottom: -40px; right: 10%;"></div>
+  <div class="container">
+    <div class="stats-final-header">
+      <span class="eyebrow">By the Numbers</span>
+      <h2 class="h-1">Where uptime matters, M2M One delivers.</h2>
+    </div>
+    <div class="stats-final-grid reveal-children">
+      <div class="stat-cell tilt-card"><div class="num"><span data-count-to="850" data-suffix="k">850k</span><span class="accent">+</span></div><div class="label">SIMs Deployed</div></div>
+      <div class="stat-cell tilt-card"><div class="num"><span data-count-to="99.30" data-decimals="2">99.30</span><span class="accent">%</span></div><div class="label">NZ &amp; AU Coverage</div></div>
+      <div class="stat-cell tilt-card"><div class="num"><span data-count-to="35">35</span><span class="accent">+ TB</span></div><div class="label">Carried Each Month</div></div>
+      <div class="stat-cell tilt-card"><div class="num"><span data-count-to="10">10</span><span class="accent">+</span></div><div class="label">Years Operating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final" id="cta-final">
+  <div class="orb teal drift" style="width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+  <div class="orb mint drift-slow" style="width: 220px; height: 220px; top: 20%; left: 5%;"></div>
+  <div class="container">
+    <span class="eyebrow">Get Started with IoT SIM Cards</span>
+    <h2 class="h-1">Sign up now and receive a free one-month trial for up to 3 IoT SIMs on Spark's network.</h2>
+    <div class="cta-final-btns">
+      <a href="/contact.html" class="btn btn-primary">Chat with an IoT Expert <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 3 5 4-5 4"/></svg></a>
+      <a href="/free-trial.html" class="btn btn-secondary">Try M2M One for free</a>
+    </div>
+    <p class="cta-final-note">1 month free trial &middot; up to 3 SIMs &middot; no minimum commitments</p>
+  </div>
+</section>
+
+</main>
+
+<!-- Back to top -->
+<button class="back-to-top" data-back-to-top aria-label="Back to top">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>
+</button>
+
+<!-- FOOTER -->
+{{> footer }}
+
+<script>
+(function () {
+  'use strict';
+
+  // --- Mobile drawer (hamburger) ---
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const navDrawer = document.querySelector('[data-nav-drawer]');
+  const closeDrawer = () => {
+    navDrawer.classList.remove('is-open');
+    navDrawer.setAttribute('aria-hidden', 'true');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+    document.body.classList.remove('no-scroll');
+  };
+  const openDrawer = () => {
+    navDrawer.classList.add('is-open');
+    navDrawer.setAttribute('aria-hidden', 'false');
+    navToggle.setAttribute('aria-expanded', 'true');
+    navToggle.setAttribute('aria-label', 'Close menu');
+    document.body.classList.add('no-scroll');
+  };
+  if (navToggle && navDrawer) {
+    navToggle.addEventListener('click', () => {
+      const open = navToggle.getAttribute('aria-expanded') === 'true';
+      open ? closeDrawer() : openDrawer();
+    });
+    // Close on link tap inside drawer
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => closeDrawer());
+    });
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navDrawer.classList.contains('is-open')) closeDrawer();
+    });
+  }
+
+  // --- Mobile drawer accordion sections ---
+  document.querySelectorAll('[data-drawer-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('is-open');
+    });
+  });
+
+  // --- Desktop dropdown click toggle for keyboard accessibility ---
+  document.querySelectorAll('.nav-toplevel').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('is-open');
+      // Close all dropdowns first
+      document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('is-open'));
+      document.querySelectorAll('.nav-toplevel').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!wasOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+  // Click outside to close
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item')) {
+      document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('is-open'));
+      document.querySelectorAll('.nav-toplevel').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    }
+  });
+  // Escape to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('is-open'));
+      document.querySelectorAll('.nav-toplevel').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    }
+  });
+
+  // --- Configurator tabs (legacy; harmless if elements absent) ---
+  const tabs = document.querySelectorAll('.config-tab');
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+    });
+  });
+
+  // ============================================================
+  // PLAN FINDER : two-question chip selector + recommendation
+  // ============================================================
+  const finderState = { usecase: 'monitor', size: 'small' };
+
+  const sizeTier = {
+    small: 'Standard',
+    mid:   'Pool',
+    large: 'Scale',
+    xl:    'Enterprise'
+  };
+
+  const usecaseProfile = {
+    monitor: {
+      label: 'Monitor',
+      desc:  "Reliable connectivity for fleets that check in rather than stream. Pooled data, real-time visibility, ready when you scale.",
+      features: [
+        'Spark nationwide coverage in NZ',
+        'Real-time monitoring & alerts',
+        'IPX failover ready'
+      ]
+    },
+    track: {
+      label: 'Track',
+      desc:  "Mobile-first connectivity for vehicles and assets on the move, with multi-network failover and bulk activation.",
+      features: [
+        'Multi-network failover',
+        'Real-time location reporting',
+        'Bulk SIM activation & APIs'
+      ]
+    },
+    connect: {
+      label: 'Connect',
+      desc:  "Always-on connectivity for connected devices and cloud workflows. Static IPs, VPN-ready, and resilient by default.",
+      features: [
+        'Static IP & private APN options',
+        'VPN-ready integration',
+        'Always-on resilience'
+      ]
+    },
+    critical: {
+      label: 'Critical',
+      desc:  "Multi-path resilience for mission-critical infrastructure, with active-active failover and Iridium satellite ready.",
+      features: [
+        'Active-active multi-network failover',
+        'Iridium® satellite failover ready',
+        'Priority NOC support'
+      ]
+    }
+  };
+
+  // Enterprise-tier addendum: subtly upgrade messaging at scale
+  const enterpriseFeatures = {
+    Scale:      'Custom data pools & API-first provisioning',
+    Enterprise: 'Dedicated NOC & custom contract terms'
+  };
+
+  function updateFinderResult() {
+    const profile = usecaseProfile[finderState.usecase];
+    const tier = sizeTier[finderState.size];
+    if (!profile || !tier) return;
+
+    const nameEl = document.querySelector('[data-result="name"]');
+    const descEl = document.querySelector('[data-result="desc"]');
+    const featEl = document.querySelector('[data-result="features"]');
+    const wrap = document.querySelector('.finder-result');
+    if (!nameEl || !descEl || !featEl || !wrap) return;
+
+    // Brief fade for the content swap
+    wrap.classList.add('is-updating');
+    setTimeout(() => {
+      // Use a thin space + middle dot + thin space for visual separation
+      nameEl.innerHTML = profile.label + ' \u00a0&middot;\u00a0 ' + tier;
+      descEl.textContent = profile.desc;
+
+      const features = profile.features.slice();
+      if (enterpriseFeatures[tier]) {
+        features.splice(2, 1, enterpriseFeatures[tier]);
+      }
+      featEl.innerHTML = features.map(f => '<li>' + f + '</li>').join('');
+
+      wrap.classList.remove('is-updating');
+    }, 180);
+  }
+
+  document.querySelectorAll('.finder-chips').forEach(group => {
+    const groupName = group.dataset.group;
+    group.addEventListener('click', (e) => {
+      const chip = e.target.closest('.finder-chip');
+      if (!chip) return;
+      group.querySelectorAll('.finder-chip').forEach(c => c.classList.remove('is-selected'));
+      chip.classList.add('is-selected');
+      if (groupName === 'usecase') finderState.usecase = chip.dataset.case;
+      if (groupName === 'size') finderState.size = chip.dataset.size;
+      updateFinderResult();
+    });
+  });
+
+  // --- Scroll progress bar ---
+  const progress = document.querySelector('.scroll-progress');
+  let ticking = false;
+  const updateScroll = () => {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+    if (progress) progress.style.setProperty('--scroll', pct + '%');
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // --- Back to top ---
+  const btt = document.querySelector('[data-back-to-top]');
+  if (btt) {
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) btt.classList.add('is-visible');
+      else btt.classList.remove('is-visible');
+    }, { passive: true });
+  }
+
+  // ============================================================
+  // MICROANIMATIONS
+  // ============================================================
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // --- Reveal: assign anim classes via selectors ---
+  const animTargets = [
+    ['.section-header', 'anim-up'],
+    ['.solution-copy', 'anim-up'],
+    ['.solution-visual', 'anim-up'],
+    ['.config-panel', 'anim-scale'],
+    ['.compare-table-wrap', 'anim-scale'],
+    ['.capabilities-banner h2', 'anim-up'],
+    ['.capabilities-banner p', 'anim-up'],
+    ['.cta-final h2', 'anim-up'],
+    ['.cta-final-btns', 'anim-up'],
+    ['.cta-final-note', 'anim-up'],
+    ['.cta-final .eyebrow', 'anim-up'],
+    ['.why-copy', 'anim-up'],
+    ['.industries-cta', 'anim-up'],
+    ['.stack-cta', 'anim-up'],
+    ['.stack-annotations.left', 'anim-right'],
+    ['.stack-annotations.right', 'anim-left'],
+    ['.stack-visual', 'anim-scale'],
+    ['.hero-copy > *', 'anim-up'],
+    ['.hero-visual', 'anim-scale'],
+    ['.logo-strip-label', 'anim-up'],
+    ['.footer-grid', 'anim-fade'],
+  ];
+  animTargets.forEach(([selector, cls]) => {
+    document.querySelectorAll(selector).forEach(el => el.classList.add(cls));
+  });
+
+  // --- Stagger groups: assign --anim-delay based on index ---
+  const staggerGroups = [
+    ['.services-grid', '.service-card', 80],
+    ['.industries-grid', '.industry-tile', 60],
+    ['.compliance-grid', '.compliance-badge', 50],
+    ['.why-credentials', '.credential-card', 80],
+    ['.stats-final-grid', '.stat-cell', 100],
+    ['.logo-strip-row', '.logo-item', 80],
+    ['.compare-table tbody', 'tr', 50],
+    ['.dropdown-grid > div > .dropdown-link', null, 40],
+    ['.stack-annotations.left', '.stack-anno', 80],
+    ['.stack-annotations.right', '.stack-anno', 80],
+  ];
+  staggerGroups.forEach(([parentSel, childSel, step]) => {
+    try {
+      document.querySelectorAll(parentSel).forEach(group => {
+        const children = childSel ? group.querySelectorAll(childSel) : [group];
+        children.forEach((el, i) => {
+          if (!el.classList.contains('anim-up') &&
+              !el.classList.contains('anim-scale') &&
+              !el.classList.contains('anim-fade') &&
+              !el.classList.contains('anim-left') &&
+              !el.classList.contains('anim-right')) {
+            el.classList.add('anim-up');
+          }
+          const delay = Math.min(i * step, 600);
+          el.style.setProperty('--anim-delay', delay + 'ms');
+        });
+      });
+    } catch (err) {
+      console.warn('Stagger group skipped:', parentSel, err.message);
+    }
+  });
+
+  // --- Reveal observer ---
+  if ('IntersectionObserver' in window && !prefersReduced) {
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.anim-up, .anim-fade, .anim-scale, .anim-left, .anim-right')
+      .forEach(el => animObserver.observe(el));
+  } else {
+    document.querySelectorAll('.anim-up, .anim-fade, .anim-scale, .anim-left, .anim-right')
+      .forEach(el => el.classList.add('in'));
+  }
+
+  // --- Hero animates immediately on load ---
+  const heroAnimEls = document.querySelectorAll('.hero .anim-up, .hero .anim-scale, .hero .anim-fade');
+  setTimeout(() => heroAnimEls.forEach(el => el.classList.add('in')), 60);
+
+  // ============================================================
+  // COUNT-UP for stats and credentials
+  // ============================================================
+  function parseStat(text) {
+    text = text.trim();
+    // "850k" → 850 with 'k' suffix
+    if (/^\d+k$/i.test(text)) {
+      return { to: parseInt(text), format: (n) => Math.round(n) + 'k' };
+    }
+    // "99.30" → float, 2 decimals
+    if (/^\d+\.\d+$/.test(text)) {
+      const decimals = (text.split('.')[1] || '').length;
+      return { to: parseFloat(text), format: (n) => n.toFixed(decimals) };
+    }
+    // "10+", "5+" → int with + suffix
+    if (/^\d+\+$/.test(text)) {
+      return { to: parseInt(text), format: (n) => Math.round(n) + '+' };
+    }
+    // Plain "35", "10"
+    if (/^\d+$/.test(text)) {
+      return { to: parseInt(text), format: (n) => Math.round(n).toString() };
+    }
+    return null; // Skip non-numeric
+  }
+
+  function animateNum(numEl) {
+    if (prefersReduced) return;
+    // Find the text node holding the leading number
+    const textNode = Array.from(numEl.childNodes)
+      .find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+    if (!textNode) return;
+    const parsed = parseStat(textNode.textContent);
+    if (!parsed) return;
+
+    const { to, format } = parsed;
+    const duration = 1800;
+    const start = performance.now();
+
+    textNode.textContent = format(0);
+
+    function tick(now) {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      textNode.textContent = format(to * eased);
+      if (t < 1) requestAnimationFrame(tick);
+      else textNode.textContent = format(to);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // Count-up animation intentionally disabled. Static values render correctly
+  // on first load and survive SPA-router navigation in the single-file demo.
+  // The previous IntersectionObserver-driven count-up could briefly flash
+  // "0+ YEARS IN OPERATION" during fast scroll, which is unacceptable for a
+  // live presentation. parseStat / animateNum are retained above in case
+  // they're needed later, but no observer is wired up.
+
+  // ============================================================
+  // CURSOR-TRACKING SPOTLIGHT on .tilt-card
+  // ============================================================
+  if (!prefersReduced && window.matchMedia('(hover: hover)').matches) {
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    tiltCards.forEach(card => {
+      let pending = false;
+      card.addEventListener('mousemove', (e) => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(() => {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          card.style.setProperty('--mx', x + '%');
+          card.style.setProperty('--my', y + '%');
+          pending = false;
+        });
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--mx', '50%');
+        card.style.setProperty('--my', '50%');
+      });
+    });
+
+    // ============================================================
+    // MAGNETIC PRIMARY BUTTONS
+    // ============================================================
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      const strength = 0.18;
+      const maxShift = 6;
+      let pending = false;
+      btn.addEventListener('mousemove', (e) => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(() => {
+          const rect = btn.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const cy = rect.top + rect.height / 2;
+          const dx = (e.clientX - cx) * strength;
+          const dy = (e.clientY - cy) * strength;
+          const clamp = (v) => Math.max(-maxShift, Math.min(maxShift, v));
+          btn.style.setProperty('--magX', clamp(dx) + 'px');
+          btn.style.setProperty('--magY', clamp(dy) + 'px');
+          pending = false;
+        });
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.setProperty('--magX', '0px');
+        btn.style.setProperty('--magY', '0px');
+      });
+    });
+
+    // ============================================================
+    // HERO VISUAL CURSOR SPOTLIGHT
+    // ============================================================
+    const heroVisual = document.querySelector('.hero-visual');
+    if (heroVisual) {
+      let pending = false;
+      heroVisual.addEventListener('mousemove', (e) => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(() => {
+          const rect = heroVisual.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          heroVisual.style.setProperty('--spot-x', x + '%');
+          heroVisual.style.setProperty('--spot-y', y + '%');
+          pending = false;
+        });
+      });
+    }
+
+    // ============================================================
+    // PARALLAX ORBS on dark sections (mouse-tracking)
+    // ============================================================
+    document.querySelectorAll('.hero, .stack, .why, .stats-final, .cta-final').forEach(section => {
+      let pending = false;
+      section.addEventListener('mousemove', (e) => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(() => {
+          const rect = section.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          section.querySelectorAll('.orb').forEach((orb, i) => {
+            const factor = i % 2 === 0 ? 24 : -16;
+            const tx = x * factor;
+            const ty = y * factor;
+            orb.style.transform = `translate(${tx}px, ${ty}px)`;
+          });
+          pending = false;
+        });
+      });
+      section.addEventListener('mouseleave', () => {
+        section.querySelectorAll('.orb').forEach(orb => {
+          orb.style.transform = '';
+        });
+      });
+    });
+  }
+})();
+</script>

@@ -1,0 +1,23 @@
+{
+  "siteName": "M2M One NZ",
+  "tagline": "We make wireless work anywhere.",
+  "url": "https://m2mone.co.nz",
+  "defaultTitle": "IoT SIM Cards & Connectivity NZ | M2M One New Zealand",
+  "defaultDescription": "IoT SIM cards and services for NZ businesses. Connect EFTPOS, GPS trackers, security cameras, and more on Spark's nationwide network. Local support, no lock-in.",
+  "social": {
+    "twitter": "@M2MOneNZ",
+    "facebook": "M2MOneNZ",
+    "linkedin": "company/m2m-one-nz-ltd"
+  },
+  "contact": {
+    "phoneTollFree": "0508 888 626",
+    "phoneTollFreeAlpha": "0508 888 M2M",
+    "phoneIntl": "+64 508 888 626",
+    "email": "info@m2mone.co.nz",
+    "office": {
+      "name": "Auckland Office",
+      "address": "Level 1, Quad 7 Building, 6 Leonard Isitt Drive, Auckland Airport, Auckland 2022"
+    }
+  },
+  "entity": "M2M One NZ Ltd"
+}
